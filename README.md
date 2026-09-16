@@ -1,78 +1,15 @@
-# Auto Insurance Customer Churn Analysis
+# Analyse der Kundenabwanderung in der Kfz-Versicherung
 
-## Objective
+## Projektübersicht
 
-Identify key drivers of customer churn and provide recommendations to improve customer retention.
+In diesem Projekt wird die Kundenabwanderung eines Kfz-Versicherungsdatensatzes analysiert. Ziel ist es, Merkmale und Kundensegmente zu identifizieren, die mit erhöhten Kündigungsraten in Zusammenhang stehen, und daraus konkrete Handlungsempfehlungen zur Verbesserung der Kundenbindung abzuleiten.
 
----
+Die Analyse umfasst die Aufbereitung und Verknüpfung mehrerer Datensätze, Feature Engineering, explorative Datenanalyse und eine weiterführende Kundensegmentierung mit SQL. Zusätzlich werden externe Inflationsdaten des Statistischen Bundesamtes verwendet, um mögliche Zusammenhänge zwischen Preisentwicklung und Kundenabwanderung zu untersuchen.
 
-## Key Findings
+## Wichtigste Ergebnisse
 
-1. Customer tenure is the strongest predictor of churn.
-2. Younger customers show higher churn rates than older customers.
-3. Income has little impact on churn behavior.
-4. Credit quality has little impact on churn behavior.
-5. Home ownership has little impact on churn behavior.
-6. Marital status has little impact on churn behavior.
-
----
-
-## Tools
-
-- Python
-- Pandas
-- NumPy
-- SQL
-- APIs
-- Tableau
-- Power BI
-- GitHub
-
----
-
-## Data Sources
-
-- customer.csv
-- demographic.csv
-- address.csv
-- termination.csv
-- autoinsurance_churn.csv
-
----
-
-## Project Workflow
-
-1. Data Loading
-2. Data Understanding
-3. Data Preparation
-4. Feature Engineering
-5. Exploratory Data Analysis
-6. SQL Analysis
-7. API Integration
-8. Dashboard Development
-9. Business Recommendations
-
----
-
-## Project Structure
-
-```text
-insurance-customer-retention-analysis/
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── notebooks/
-│   └── insurance_analysis.ipynb
-│
-├── sql/
-│   └── analysis_queries.sql
-│
-├── dashboard/
-│   ├── tableau/
-│   └── powerbi/
-│
-├── images/
-│
-└── README.md
+- **Vertragsdauer:** Die Vertragsdauer zeigt den stärksten Zusammenhang mit der Kundenabwanderung. Besonders Kunden mit sehr kurzer Vertragsdauer weisen eine deutlich erhöhte Kündigungsrate auf.
+- **Alter:** Jüngere Kunden kündigen häufiger als ältere Kunden. Die niedrigste Kündigungsrate zeigt die Gruppe der Kunden ab 60 Jahren.
+- **Wohndauer:** Mit zunehmender Wohndauer sinkt die Kündigungsrate.
+- **Jahresprämie:** Höhere Versicherungsprämien gehen mit einer moderat höheren Kündigungsrate einher.
+- **Weitere Merkmale:** Einkommen, Familienstand, Wohneigentum, Kreditwürdigkeit und Kinder zeigen in der Analyse keinen bzw. nur einen geringen Zusammenhang mit der Kündigungsrate.
