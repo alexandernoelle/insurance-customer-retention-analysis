@@ -104,4 +104,13 @@ Um die Ursachen der erhöhten Kündigungsrate in den ersten Vertragsjahren genau
 Der für die Kundenabwanderungsanalyse verwendete Datensatz stammt von Kaggle:
 
 **Auto Insurance Churn Analysis Dataset**  
-Merishna Singh Suwal
+Merishna Singh Suwal  
+https://www.kaggle.com/datasets/merishnasuwal/auto-insurance-churn-analysis-dataset
+
+Für die Analyse werden folgende Dateien aus dem Datensatz verwendet:
+
+- `customer.csv`
+- `demographic.csv`
+- `termination.csv`
+
+Aufgrund der Dateigröße werden die CSV-Dateien nicht direkt im GitHub-Repository bereitgestellt. Sie können über den oben verlinkten Kaggle-Datensatz heruntergeladen werden.
